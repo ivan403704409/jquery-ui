@@ -335,6 +335,7 @@ return $.widget( "ui.menu", {
 		items.not( ".ui-menu-item, .ui-menu-divider" )
 			.addClass( "ui-menu-item" )
 			.children( "div" )
+				.not( ".ui-menu" )
 				.addClass( "ui-menu-item-wrapper" )
 				.uniqueId()
 				.attr({

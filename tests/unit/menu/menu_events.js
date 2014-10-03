@@ -32,7 +32,7 @@ test( "handle click on custom item menu", function() {
 		select: function() {
 			log();
 		},
-		menus: "div"
+		menus: ".menu"
 	});
 	log( "click", true );
 	click( element, "1" );
