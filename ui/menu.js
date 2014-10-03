@@ -334,7 +334,7 @@ return $.widget( "ui.menu", {
 		// Don't refresh list items that are already adapted
 		items.not( ".ui-menu-item, .ui-menu-divider" )
 			.addClass( "ui-menu-item" )
-			.find( "> div" )
+			.children( "div" )
 				.addClass( "ui-menu-item-wrapper" )
 				.uniqueId()
 				.attr({
