@@ -309,7 +309,7 @@ return $.widget( "ui.menu", {
 			})
 			.each(function() {
 				var menu = $( this ),
-					item = menu.prev( "div" ),
+					item = menu.prev(),
 					submenuCarat = $( "<span>" )
 						.addClass( "ui-menu-icon ui-icon " + icon )
 						.data( "ui-menu-submenu-carat", true );
@@ -334,7 +334,7 @@ return $.widget( "ui.menu", {
 		// Don't refresh list items that are already adapted
 		items.not( ".ui-menu-item, .ui-menu-divider" )
 			.addClass( "ui-menu-item" )
-			.children( "div" )
+			.children()
 				.not( ".ui-menu" )
 				.addClass( "ui-menu-item-wrapper" )
 				.uniqueId()

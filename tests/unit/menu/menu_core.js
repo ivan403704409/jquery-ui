@@ -49,7 +49,7 @@ asyncTest( "#9532: Need a way in Menu to keep ui-state-active class on selected 
 	expect( 1 );
 	var element = $( "#menu1" ).menu(),
 		firstChild = element.children().eq( 0 ),
-		wrapper = firstChild.find( ".ui-menu-item-wrapper" );
+		wrapper = firstChild.children( ".ui-menu-item-wrapper" );
 
 	element.menu( "focus", null, firstChild );
 	wrapper.addClass( "ui-state-active" );
