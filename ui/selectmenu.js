@@ -207,7 +207,7 @@ return $.widget( "ui.selectmenu", {
 		this.menuInstance.refresh();
 		this.menuItems = this.menu.find( "li" )
 			.not( ".ui-selectmenu-optgroup" )
-			.find( ".ui-menu-item-wrapper" );
+				.find( ".ui-menu-item-wrapper" );
 
 		item = this._getSelectedItem();
 
