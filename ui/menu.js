@@ -336,12 +336,12 @@ return $.widget( "ui.menu", {
 			.addClass( "ui-menu-item" )
 			.children()
 				.not( ".ui-menu" )
-				.addClass( "ui-menu-item-wrapper" )
-				.uniqueId()
-				.attr({
-					tabIndex: -1,
-					role: this._itemRole()
-				});
+					.addClass( "ui-menu-item-wrapper" )
+					.uniqueId()
+					.attr({
+						tabIndex: -1,
+						role: this._itemRole()
+					});
 
 		// Add aria-disabled attribute to any disabled menu item
 		items.filter( ".ui-state-disabled" ).attr( "aria-disabled", "true" );
@@ -380,8 +380,7 @@ return $.widget( "ui.menu", {
 		this._scrollIntoView( item );
 
 		this.active = item.first();
-		focused = this.active
-			.children( ".ui-menu-item-wrapper" )
+		focused = this.active.children( ".ui-menu-item-wrapper" )
 			.addClass( "ui-state-focus" )
 			.removeClass( "ui-state-active" );
 
@@ -394,9 +393,9 @@ return $.widget( "ui.menu", {
 		// Highlight active parent menu item, if any
 		this.active
 			.parent()
-			.closest( ".ui-menu-item" )
-			.children( ".ui-menu-item-wrapper" )
-			.addClass( "ui-state-active" );
+				.closest( ".ui-menu-item" )
+					.children( ".ui-menu-item-wrapper" )
+						.addClass( "ui-state-active" );
 
 		if ( event && event.type === "keydown" ) {
 			this._close();
