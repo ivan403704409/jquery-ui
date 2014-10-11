@@ -1,5 +1,5 @@
 /*!
- *Ivan jQuery UI Slider @VERSION
+ * jQuery UI Slider @VERSION
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
